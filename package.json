@@ -15,9 +15,7 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "express-handlebars": "^4.0.4",
-    "nodemailer": "^6.4.8"
-  },
-  "devDependencies": {
+    "nodemailer": "^6.4.8",
     "dotenv": "^8.2.0"
   }
 }

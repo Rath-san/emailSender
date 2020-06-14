@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 
-require('dotenv').config({ silent: process.env.NODE_ENV === 'production' });
+require('dotenv').config({ silent: process.env.NODE_ENV !== 'developement' });
 
 
 const sendEmail = ({name, email, message}, onError, onSuccess) => {

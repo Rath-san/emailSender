@@ -3,6 +3,8 @@ const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 
+const port = process.env.PORT || 4000
+
 require('dotenv').config({ silent: process.env.NODE_ENV !== 'developement' });
 
 
@@ -55,4 +57,4 @@ app.post('/send', cors(), (req, res) => {
     );
 });
 
-app.listen(4000, () => console.log('server started @ 4000'));
+app.listen(port, () => console.log(`Server's running @ port ${port}`));

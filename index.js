@@ -18,7 +18,7 @@ const sendEmail = ({ name, email, message }, onError, onSuccess) => {
     const mailOptions = {
         from: email,
         sender: email,
-        to: process.env.TO,
+        to: process.env.TO.split(','),
         subject: `${name} | new message !`,
         text: message,
     };
